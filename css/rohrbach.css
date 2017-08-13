@@ -1,0 +1,324 @@
+@font-face {
+    font-family: "marketdeco";
+    src: url(../scripts/Market_Deco.ttf) format("truetype");
+}
+
+/* General style */
+
+body, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+a,
+div,
+menu,
+nav, 
+header,
+footer, 
+article,
+em,
+form
+{
+  background-color: transparent;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "franklin gothic medium", sans-serif;
+  font-size: 20px;
+  font-weight: normal; 
+  font-style: normal;
+  text-decoration: none;
+}
+
+body {
+  margin: 5% 10%;
+}
+
+h1, h2, h3, h4 {
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: marketdeco;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 180%;
+}
+
+h3 {
+  font-size: 160%;
+}
+
+h4 {
+  font-size: 120%;
+}
+
+/* Welcome Screen */
+
+body.welcome {
+  text-align: center;
+  background-image: url(../images/Photo_HermanPieter_LawOrder.JPG);
+  background-position: top left;
+  background-size: 1920px 1280px;
+  background-repeat: no-repeat;
+}
+
+.welcome .logo h1 {
+  transition: opacity 1s ease 0.1s;
+}
+
+.welcome h1 {
+  font-family: marketdeco;
+  margin: 5% 0 0 0;
+  padding: 0;
+  letter-spacing: -10px;
+  font-size: 720%;
+  line-height: 66%;
+  opacity: 0.85;
+}
+
+.welcome .down {
+  font-family: "copperplate gothic", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0px;
+  font-size: 480%;
+}
+
+.welcome div.btn {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 10%;  
+}
+
+.welcome button {
+  font-size: 160%;
+  font-family: "copperplate gothic", sans-serif;
+  color: white;
+  background-color: black; 
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 4px;
+  opacity: 0.8;
+  padding: 1%;
+  transition: all 0.1s linear 0.1s;
+}
+
+.welcome .col {
+   position: fixed;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   float: left;
+   opacity: 0;
+   transition: all 0.5s ease-in 0.1s;   
+}
+
+.welcome button:hover {
+  color: black;
+  border-color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.welcome a:hover + .col {
+  opacity: 1;
+}
+
+.welcome .logo:hover {
+  cursor: default;
+}
+
+.welcome .logo:hover h1{
+  opacity: 0;
+}
+
+/*General*/
+
+/*perhaps make these divs fixed width*/
+/*use different sizes for different screen sizes*/
+
+
+div {
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 180px;
+  right: 180px;
+  padding: 5% 10%;
+}
+
+.content p{
+  padding: 1%;
+  line-height: 130%;
+}
+
+.content form{
+  padding: 1%;
+  line-height: 130%;
+}
+
+.content h2{
+  font-size: 140%;
+  padding-top: 2%;
+}
+
+.line {
+  height: 2px;
+  width: 70%;
+  background: linear-gradient(90deg, black, white);
+  margin: 2% 0 3% 0;
+}
+
+/* Static */
+
+.navigate {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 100%;
+  max-height: 100%;
+  border-right-style: double;
+  overflow-y: auto;
+  overflow-style: auto;
+}
+
+.navigate ul {
+  height: 100%;
+}
+
+.navigate ul li {
+  display: table;
+  box-sizing: border-box;
+  height: 16%;
+  width: 100%;
+  transition: background-color 0.1s linear 0.05s;
+  transition: opacity 0.1s linear 0.05s;
+}
+
+#contactTab {
+    height: 20%;
+}
+
+.navigate ul li.selected {
+    background-color: black;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.navigate ul li.selected p {
+    color: white;
+}
+
+.navigate ul li p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: marketdeco, "copperplate gothic", sans-serif;
+  font-weight: bold;
+  font-size: 120%;
+  line-height: 200%;
+  color: black;
+  opacity: 1;
+  transition: color 0.1s linear 0.05s;
+}
+
+.rightPicture {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 100%;
+  border-left-style: double;
+  background-image: url(../images/Menu_HermanPieter_HighLow.JPG);
+  background-position: 50% -75px;
+  background-repeat:repeat-y; 
+}
+
+.rightPicture.col {
+  background-image: url(../images/Menu_HermanPieter_HighLow_Colour.JPG);
+  opacity: 0;
+  transition: opacity 0.5s ease-in 0.1s; 
+ }
+
+.navigate ul li:hover {
+  background-color: black;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.navigate ul li:hover p {
+  color: white;
+}
+
+.navigate:hover ~ .rightPicture.col {
+  opacity: 1;
+}
+
+/*Home*/
+
+.homeVideo {
+	display: block;
+	margin: auto auto auto auto;
+	width: 640px;
+	height: 480px;
+}
+
+/*Photos*/
+
+/*Contact*/
+
+.contact .facebook {
+  display: inline-block;
+  background: url(../images/Logo_Facebook.png) 50% 50% no-repeat;
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.contact .youtube {
+  display: inline-block;
+  background: url(../images/Logo_Youtube.jpg) 50% 50% no-repeat;
+  background-size: 100%;  
+  width: 50px;
+  height: 50px;
+}
+
+.contact .firstlink {
+  display: inline-block;
+  padding-left: 1%; 
+}
+
+.contact form div {
+  display: inline-block;
+  width: 100px;
+}
+
+/*Shows*/
+
+.shows .show a {
+  color: blue;  
+}
+
+.shows h2 {
+  margin-top: 40px;
+}

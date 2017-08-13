@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<div class="content" id="wrapper">
+    <article class="contact">
+        <h1>Contact and booking</h1>
+
+        <p><a href="mailto:info@rohrbachconnection.com">info@rohrbachconnection.com</a></p>
+
+        <div class="firstlink"><a href="https://www.facebook.com/rohrbachconnection"><div class="facebook"></div></a></div><!
+        --><a href="https://www.youtube.com/channel/UCWlV7AjoWwaP9HKzToEKaHQ"><div class="youtube"></div></a>
+        <p>For booking, media inquiries or other contact you can also fill out this form.</p>
+
+        <iframe name="dummy" style="display:none;"></iframe>
+        <form action="../scripts/MailHandler.php" method="post" target="dummy">
+            <div>Name:</div> <input type="text" name="name" id="name"><br>
+            <div>E-mail:</div> <input type="text" name="email" id="email"><br>
+            <br>
+            <textarea class="message" name="message" id="message" rows="30" cols="60"></textarea><br>
+            <br>
+            <input type="submit" value="Submit" onclick="messageSent()">
+        </form>
+        <script>
+            function messageSent() {
+                var message;
+                name = $("#name").val();
+                email = $("#email").val();
+                message = $("#message").val();
+                message = message.trim();
+                email = email.trim();
+                name = name.trim();
+                composite = name + email + message;
+                if (composite != "") {
+                    alert("Thank you for your message.");
+                }
+            }
+        </script>
+    </article>
+</div>
+</html>
