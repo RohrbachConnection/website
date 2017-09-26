@@ -1,0 +1,68 @@
+{
+  "shows": {
+    "show": [
+      {
+        "venue": {
+          "-link": "https://hubspotleiden.nl/nl",
+          "#text": "HUBspot"
+        },
+        "city": "Leiden",
+        "country": "The Netherlands",
+        "date": "2017-06-29"
+      },
+      {
+        "venue": "HUBspot",
+        "city": "Leiden",
+        "country": "The Netherlands",
+        "date": "2017-05-24"
+      },
+      {
+        "venue": "V.S.L. Catena",
+        "city": "Leiden",
+        "country": "The Netherlands",
+        "date": "2017-04-28"
+      },
+      {
+        "venue": "HUBspot",
+        "event": {
+          "-link": "http://hackyourhabitat.nl/",
+          "#text": "Hack Your Habitat"
+        },
+        "city": "Leiden",
+        "country": "The Netherlands",
+        "date": "2017-02-12"
+      },
+      {
+        "venue": "HUBspot",
+        "event": {
+          "-link": "http://hackyourhabitat.nl/",
+          "#text": "Hack Your Habitat"
+        },
+        "city": "Leiden",
+        "country": "The Netherlands",
+        "date": "2017-02-10"
+      },
+      {
+        "venue": {
+          "-link": "http://www.emma.nl/",
+          "#text": "EMMA"
+        },
+        "city": "The Hague",
+        "country": "The Netherlands",
+        "date": "2017-02-09"
+      },
+      {
+        "venue": "Van der Valk Hotel",
+        "city": "Sassenheim",
+        "country": "The Netherlands",
+        "date": "2016-12-20"
+      },
+      {
+        "venue": "V.S.L. Catena",
+        "city": "Leiden",
+        "country": "The Netherlands",
+        "date": "2016-11-30"
+      }
+    ]
+  }
+}
