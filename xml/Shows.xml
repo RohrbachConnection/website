@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <shows>
   <show>
+    <venue link="https://vencaf.nl/the-resilient-city/">Venture Café</venue>
+    <city>Rotterdam</city>
+    <country>The Netherlands</country>
+    <date>2017-09-28</date>
+  </show>
+  <show>
     <venue link="https://hubspotleiden.nl/nl">HUBspot</venue>
     <city>Leiden</city>
     <country>The Netherlands</country>
